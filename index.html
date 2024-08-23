@@ -9,13 +9,24 @@
             text-align: center;
             margin-top: 25px;
         }
+        .form
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
     <h1>HTML & CSS: Creating Forms</h1>
-    <form method="post">
-        <label for="color">Enter your Favorite Color: </label>
-        <input type="text" id="color" name="color">
-    </form>
+    <div class="form">
+        <form method="post">
+            <label for="color">Enter your Favorite Color: </label>
+            <input type="text" id="color" name="color">
+        </form>
+    </div>
 </body>
 </html>
