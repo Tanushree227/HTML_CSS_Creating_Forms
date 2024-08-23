@@ -4,10 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Creating Forms</title>
     <style>
-        h1
+        h1, h3
         {
             text-align: center;
             margin-top: 25px;
+        }
+        .action
+        {
+            padding: 15px;
         }
         .form
         {
@@ -22,10 +26,19 @@
 </head>
 <body>
     <h1>HTML & CSS: Creating Forms</h1>
+    <h3>Registration Form</h3>
     <div class="form">
         <form method="post">
-            <label for="color">Enter your Favorite Color: </label>
-            <input type="text" id="color" name="color">
+            <div class="action">
+                <label for="color">Enter your Full Name: </label>
+                <input type="text" id="color" name="color" required>
+            </div>
+            <div class="action">
+                <label for="color">Enter your Email Id: </label>
+                <input type="email" id="color" name="color" required>
+            </div>
+
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
